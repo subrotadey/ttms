@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: MSaqib
- * Date: 23-09-2016
- * Time: 22:04
- */
 include 'connection.php';
 if (isset($_POST['tobealloted'])) {
     $subject = $_POST['tobealloted'];
@@ -27,7 +21,5 @@ if ($q) {
     $message = $subject;
     echo "<script type='text/javascript'>alert('$message');</script>";
     // header("Location:index.html");
-
 }
-
 ?>

@@ -1,9 +1,3 @@
-/**
-* Created by PhpStorm.
-* User: MSaqib
-* Date: 17-11-2016
-* Time: 19:50
-*/
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -82,9 +76,9 @@ if (isset($_POST['in_class'])) {
         <select name="course" class="list-group-item">
             <option selected disabled>Select Course</option>
             ';
-            <option value="2">BTech 2nd Year</option>
-            <option value="3">BTech 3rd Year</option>
-            <option value="4">BTech 4rth Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
         </select>
     </div>
 
@@ -189,9 +183,9 @@ if (isset($_POST['in_class'])) {
 </div>
 <!--HOME SECTION END-->
 
-<!--<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
--->
+<div id="footer">
+    &copy 2022 | All Rights Reserved To Meta Group |  <a href="https://github.com/subrotadey" style="color: #fff" target="_blank">Design & Developed By Subrota, Nowshin & Tamanna
+</div>
 <!-- FOOTER SECTION END-->
 
 <!--  Jquery Core Script -->

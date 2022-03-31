@@ -1,9 +1,3 @@
-/**
-* Created by PhpStorm.
-* User: MSaqib
-* Date: 17-11-2016
-* Time: 18:33
-*/
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -102,7 +96,6 @@
                 while ($row = mysqli_fetch_assoc($q)) {
                     $mystring .= '<option value="' . $row['faculty_number'] . '">' . $row['name'] . '</option>';
                 }
-
                 echo $mystring;
             }
             ?>
@@ -155,12 +148,6 @@
     </div>
 </form>
 <?php
-/**
- * Created by PhpStorm.
- * User: MSaqib
- * Date: 16-11-2016
- * Time: 14:13
- */
 include 'connection.php';
 if (isset($_GET['name'])) {
     $id = $_GET['name'];
@@ -272,9 +259,9 @@ if (isset($_GET['name'])) {
 
 <!--HOME SECTION END-->
 
-<!--<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
--->
+<div id="footer">
+    &copy 2022 | All Rights Reserved To Meta Group |  <a href="https://github.com/subrotadey" style="color: #fff" target="_blank">Design & Developed By Subrota, Nowshin & Tamanna
+</div>
 <!-- FOOTER SECTION END-->
 
 <!--  Jquery Core Script -->

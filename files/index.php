@@ -84,14 +84,16 @@ if (isset($_GET['generated']) && $_GET['generated'] == "false") {
     <form data-scroll-reveal="enter from the bottom after 0.2s" action="studentvalidation.php" method="post">
         <select id="select_semester" name="select_semester" class="list-group-item">
             <option selected disabled>Select Semester</option>
-            <option value="3"> B.Tech II Year ( Semester III )</option>
-            <option value="4"> B.Tech II Year ( Semester IV )</option>
-            <option value="5"> B.Tech III Year ( Semester V )</option>
-            <option value="6"> B.Tech III Year ( Semester VI )</option>
-            <option value="7"> B.Tech IV Year ( Semester VII )</option>
-            <option value="8"> B.Tech IV Year ( Semester VIII )</option>
+            <option value="1"> B.Sc 1st Semester ( Semester I )</option>
+            <option value="2"> B.Sc 2nd Semester ( Semester II )</option>
+            <option value="3"> B.Sc 3rd Semester ( Semester III )</option>
+            <option value="4"> B.Sc 4th Semester ( Semester IV )</option>
+            <option value="5"> B.Sc 5th Semester ( Semester V )</option>
+            <option value="6"> B.Sc 6th Semester ( Semester VI )</option>
+            <option value="7"> B.Sc 7th Semester ( Semester VII )</option>
+            <option value="8"> B.Sc 8th Semester ( Semester VIII )</option>
         </select>
-        <button type="submit" class="btn btn-info btn-lg" style="margin-top: 10px">Download</button>
+        <button type="submit" class="btn btn-info btn-lg" style="margin-top: 10px">View</button>
     </form>
 </div>
 <!-- The Modal -->
@@ -203,27 +205,27 @@ if (isset($_GET['generated']) && $_GET['generated'] == "false") {
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                 <div class="faculty-div">
                     <img src="assets/img/faculty/donk.jpeg" class="img-rounded"/>
-                    <h3 align="center">Prof. Donk</h3>
+                    <h3 align="center">Dr. Md. Nural Anwar</h3>
                     <hr/>
-                    <h4 align="center">Dean<br/>F/o Engineering & Technology</h4>
+                    <h4 align="center">Vice Chancellor<br/>Professor, Department of Microbiology</h4>
 
                 </div>
             </div>
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
                 <div class="faculty-div">
                     <img src="assets/img/faculty/princi.jpeg" class="img-rounded"/>
-                    <h3 align="center">PROF. Devil</h3>
+                    <h3 align="center">Mrs. Taofica Amrine</h3>
                     <hr/>
-                    <h4 align="center">Principal<br/> ZHCET</h4>
+                    <h4 align="center">Chairman<br/> Computer Engineering Department</h4>
 
                 </div>
             </div>
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
                 <div class="faculty-div">
                     <img src="assets/img/faculty/cat.jpeg" class="img-rounded"/>
-                    <h3 align="center">PROF. Meow</h3>
+                    <h3 align="center">Umma Saima Rahman</h3>
                     <hr/>
-                    <h4 align="center">Chairman<br/>Computer Engineering Department</h4>
+                    <h4 align="center">Lecturer<br/>Computer Engineering Department</h4>
 
                 </div>
             </div>
@@ -237,14 +239,14 @@ if (isset($_GET['generated']) && $_GET['generated'] == "false") {
         <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 "
              data-scroll-reveal="enter from the bottom after 0.4s">
 
-            <h2><strong>Our Location </strong></h2>
+            <h2><strong>GET IN TOUCH</strong></h2>
             <hr/>
             <div>
-                <h4>Find Us Anywhere,
+                <h4>7-14, Nikunja Housing Society <br> South Khulshi, Chittagong
                 </h4>
-                <h4> Said Anywhere</h4>
-                <h4><strong>Call:</strong> 9837773333 </h4>
-                <h4><strong>Email: </strong>meow@meow.com</h4>
+                <!-- <h4> Said Anywhere</h4> -->
+                <h4><strong>Call:</strong> +88 02333369877 <br> +88 02333369899 </h4>
+                <h4><strong>Email: </strong>portcityuniversity@gmail.com</h4>
             </div>
 
 
@@ -265,9 +267,9 @@ if (isset($_GET['generated']) && $_GET['generated'] == "false") {
     </div>
 </div>
 <!-- CONTACT SECTION END-->
-<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
---></div>
+<div id="footer" >
+     &copy 2022 | All Rights Reserved To Meta Group |  <a href="https://github.com/subrotadey" style="color: #fff" target="_blank">Design & Developed By Subrota, Nowshin & Tamanna</a>
+</div>
 <!-- FOOTER SECTION END-->
 
 <!--  Jquery Core Script -->

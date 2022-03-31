@@ -339,7 +339,7 @@ if (isset($_GET['success'])) {
                     }
 
                     echo '</table>';
-                    $sign = "GENERATED VIA TIMETABLE MANAGEMENT SYSTEM, COMPUTER ENGINEERING DEPARTMENT, AMU.";
+                    $sign = "GENERATED VIA TIMETABLE MANAGEMENT SYSTEM, COMPUTER ENGINEERING DEPARTMENT, PCIU.";
                     echo "<div style='margin-left: 10px' align='center'>" . "<br>" . $str . "<br></div>" .
                         "<div style='margin-left: 10px' align='center'>" . "<strong>" . $sign . "<br></strong></div>";
                 }
@@ -380,9 +380,9 @@ if (isset($_GET['success'])) {
 
 <!--HOME SECTION END-->
 
-<!--<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
--->
+<div id="footer">
+    &copy 2022 | All Rights Reserved To Meta Group |  <a href="https://github.com/subrotadey" style="color: #fff" target="_blank">Design & Developed By Subrota, Nowshin & Tamanna
+</div>
 <!-- FOOTER SECTION END-->
 
 <!--  Jquery Core Script -->

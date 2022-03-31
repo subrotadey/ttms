@@ -177,18 +177,13 @@
         //heading.innerHTML = "Faculty Login";
         subjectForm.style.display = "block";
         //adminForm.style.display = "none";
-
-
     }
-
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
         //adminForm.style.display = "none";
         subjectForm.style.display = "none";
-
     }
-
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == modal) {
@@ -274,9 +269,9 @@
 </div>
 <!--HOME SECTION END-->
 
-<!--<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
---></div>
+<div id="footer">
+    &copy 2022 | All Rights Reserved To Meta Group |  <a href="https://github.com/subrotadey" style="color: #fff" target="_blank">Design & Developed By Subrota, Nowshin & Tamanna
+</div>
 <!-- FOOTER SECTION END-->
 
 <!--  Jquery Core Script -->

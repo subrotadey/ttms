@@ -154,7 +154,7 @@
                     <div class="form-group">
                         <label for="teachercontactnumber">Contact No.</label>
                         <input type="text" class="form-control" id="teachercontactnumber" name="TP"
-                               placeholder="+91 ...">
+                               placeholder="+880 ...">
                     </div>
 
                     <div class="form-group">
@@ -191,8 +191,6 @@
         //heading.innerHTML = "Faculty Login";
         facultyForm.style.display = "block";
         //adminForm.style.display = "none";
-
-
     }
 
     // When the user clicks on <span> (x), close the modal
@@ -200,7 +198,6 @@
         modal.style.display = "none";
         //adminForm.style.display = "none";
         facultyForm.style.display = "none";
-
     }
 
     // When the user clicks anywhere outside of the modal, close it
@@ -295,9 +292,9 @@
 </div>
 <!--HOME SECTION END-->
 
-<!--<div id="footer">
-    <!--  &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
--->
+<div id="footer">
+    &copy 2022 | All Rights Reserved To Meta Group |  <a href="https://github.com/subrotadey" style="color: #fff" target="_blank">Design & Developed By Subrota, Nowshin & Tamanna
+</div>
 <!-- FOOTER SECTION END-->
 
 <!--  Jquery Core Script -->

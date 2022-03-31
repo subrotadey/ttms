@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: MSaqib
- * Date: 17-11-2016
- * Time: 01:59
- */
-
 //$days = array("monday","tuesday","wednesday","thursday","friday","saturday");
 //echo $_POST['CN'];
 //echo $_POST['SB'];

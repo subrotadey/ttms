@@ -3,9 +3,6 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 25, 2017 at 10:08 AM
--- Server version: 5.7.11
--- PHP Version: 5.6.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -37,8 +34,8 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`name`, `password`, `id`) VALUES
-('admin', 'pass123', '01');
+INSERT INTO `admin` (`name`, `password`) VALUES
+('admin', 'pass123');
 
 -- --------------------------------------------------------
 
@@ -85,7 +82,7 @@ INSERT INTO `semester3` (`day`, `period1`, `period2`, `period3`, `period4`, `per
 ('tuesday', 'CO203<br>SI', 'CO207<br>AMA', 'EL211<br>MS', 'AM261<br>SH', '-<br>-', 'CO293<br>SI, TA, IZ'),
 ('wednesday', 'CO206<br>NA', 'AM261<br>SH', 'CO207<br>AMA', '-<br>-', '-<br>-', 'CO292<br>AMA, MHK, FA'),
 ('thursday', 'CO203<br>SI', 'EL211<br>MS', 'CO207<br>AMA', '-<br>-', '-<br>-', 'CO293<br>SI, TA, IZ'),
-('friday', 'CO206<br>NA', 'AM261<br>SH', 'CO203<br>SI', '-<br>-', '-<br>-', '-<br>-, -, -'),
+('Sunday', 'CO206<br>NA', 'AM261<br>SH', 'CO203<br>SI', '-<br>-', '-<br>-', '-<br>-, -, -'),
 ('saturday', 'EL211<br>MS', 'CO207<br>AMA', 'CO203<br>SI', 'CO206<br>NA', '-<br>-', 'CO292<br>AMA, MHK, FA');
 
 -- --------------------------------------------------------
@@ -113,7 +110,7 @@ INSERT INTO `semester5` (`day`, `period1`, `period2`, `period3`, `period4`, `per
 ('tuesday', 'EL340<br>MS', 'CO310<br>FA', 'ME340<br>FT', '-<br>-', '-<br>-', 'CO393<br>AMA, FA, RA'),
 ('wednesday', 'CO309<br>AMK', 'CO308<br>IZ', 'ME340<br>FT', '-<br>-', '-<br>-', '-<br>-, -, -'),
 ('thursday', 'EL340<br>MS', 'CO310<br>FA', 'CO309<br>AMK', '-<br>-', '-<br>-', 'CO393<br>AMA, FA, RA'),
-('friday', 'CO308<br>IZ', 'ME340<br>FT', 'CO309<br>AMK', 'EL340<br>MS', '-<br>-', 'CO394<br>RA, MRW, AMA'),
+('Sunday', 'CO308<br>IZ', 'ME340<br>FT', 'CO309<br>AMK', 'EL340<br>MS', '-<br>-', 'CO394<br>RA, MRW, AMA'),
 ('saturday', 'CO310<br>FA', 'EL340<br>MS', 'CO308<br>IZ', '-<br>-', '-<br>-', '-<br>-, -, -');
 
 -- --------------------------------------------------------
@@ -141,7 +138,7 @@ INSERT INTO `semester7` (`day`, `period1`, `period2`, `period3`, `period4`, `per
 ('tuesday', 'CO451<br>AMA', 'CO448<br>NA', 'CO406<br>AMA', 'CO445<br>MHK', '-<br>-', 'CO493<br>NA, MRW, AMK'),
 ('wednesday', 'CO431<br>RA', 'CO460<br>TA', 'CO445<br>MHK', 'CO451<br>AMA', 'CO448<br>NA', 'CO494<br>IZ, MSU, SB'),
 ('thursday', 'CO406<br>AMA', 'CO451<br>AMA', 'CO448<br>NA', 'CO431<br>RA', 'CO460<br>TA', 'CO493<br>NA, MRW, AMK'),
-('friday', 'CO445<br>MHK', 'CO431<br>RA', 'CO460<br>TA', 'CO406<br>AMA', '-<br>-', '-<br>-, -, -'),
+('Sunday', 'CO445<br>MHK', 'CO431<br>RA', 'CO460<br>TA', 'CO406<br>AMA', '-<br>-', '-<br>-, -, -'),
 ('saturday', 'CO451<br>AMA', 'CO448<br>NA', 'CO406<br>AMA', '-<br>-', '-<br>-', '-<br>-, -, -');
 
 -- --------------------------------------------------------
@@ -168,15 +165,15 @@ CREATE TABLE `subjects` (
 
 INSERT INTO `subjects` (`subject_code`, `subject_name`, `course_type`, `semester`, `department`, `isAlloted`, `allotedto`, `allotedto2`, `allotedto3`) VALUES
 ('CO445', 'Network Security', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T012', '', ''),
-('CO451', 'Computer Network Design', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T003', '', ''),
+('CO451', 'Computer Network Design', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T003', 'T004', ''),
 ('CO494', 'Embedded  Systems Lab', 'LAB', 7, 'Computer Engg. Dept.', 1, 'T008', 'T001', 'T004'),
 ('CO493', 'Networking Lab', 'LAB', 7, 'Computer Engg. Dept.', 1, 'T002', 'T007', 'T011'),
 ('CO394', 'Minor Project', 'LAB', 5, 'Computer Engg. Dept.', 1, 'T005', 'T007', 'T003'),
 ('CO393', 'Software Lab I', 'LAB', 5, 'Computer Engg. Dept.', 1, 'T003', 'T013', 'T005'),
-('CO292', ' Data Structures Lab', 'LAB', 3, 'Computer Engg. Dept.', 1, 'T003', 'T012', 'T013'),
+('CO292', 'Data Structures Lab', 'LAB', 3, 'Computer Engg. Dept.', 1, 'T003', 'T012', 'T013'),
 ('CO293', 'Programming Lab', 'LAB', 3, 'Computer Engg. Dept.', 1, 'T006', 'T009', 'T008'),
 ('CO431', 'Internet Tools', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T005', '', ''),
-('CO406', 'Compiler Design', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T003', '', ''),
+('CO406', 'Compiler Design', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T003', 'T004', ''),
 ('CO206', 'Logic Theory & Computer Organisation', 'THEORY', 3, 'Computer Engg. Dept.', 1, 'T002', '', ''),
 ('EL211', 'Electronic Devices & Circuits', 'THEORY', 3, 'Electronics Engg. Dept.', 1, 'T014', '', ''),
 ('AM261', 'Higher Mathematics', 'THEORY', 3, 'Applied Mathematics Dept.', 1, 'T016', '', ''),
@@ -188,7 +185,7 @@ INSERT INTO `subjects` (`subject_code`, `subject_name`, `course_type`, `semester
 ('ME340', 'Economics & Management', 'THEORY', 5, 'Computer Engg. Dept.', 1, 'T015', '', ''),
 ('CO448', 'Embedded Systems', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T010', '', ''),
 ('CO460', 'Computer Architecture', 'THEORY', 7, 'Computer Engg. Dept.', 1, 'T009', '', ''),
-('CO203', 'Object Oriented Programming', 'THEORY', 3, 'Computer Engg. Dept.', 1, 'T006', '', '');
+('CO203', 'Object Oriented Programming', 'THEORY', 3, 'Computer Engg. Dept.', 1, 'T006', 'T004', '');
 
 -- --------------------------------------------------------
 
@@ -215,7 +212,7 @@ INSERT INTO `t001` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('wednesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO494'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
-('friday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -243,7 +240,7 @@ INSERT INTO `t002` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO493'),
 ('wednesday', 'CO206<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO493'),
-('friday', 'CO206<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', 'CO206<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', 'CO206<br>NL32', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -271,7 +268,7 @@ INSERT INTO `t003` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', 'CO451<br>ML04', 'CO207<br>NL32', 'CO406<br>ML04', '-<br>-', '-<br>-', 'CO393'),
 ('wednesday', '-<br>-', '-<br>-', 'CO207<br>NL32', 'CO451<br>ML04', '-<br>-', 'CO292'),
 ('thursday', 'CO406<br>ML04', 'CO451<br>ML04', 'CO207<br>NL32', '-<br>-', '-<br>-', 'CO393'),
-('friday', '-<br>-', '-<br>-', '-<br>-', 'CO406<br>ML04', '-<br>-', 'CO394'),
+('Sunday', '-<br>-', '-<br>-', '-<br>-', 'CO406<br>ML04', '-<br>-', 'CO394'),
 ('saturday', 'CO451<br>ML04', 'CO207<br>NL32', 'CO406<br>ML04', '-<br>-', '-<br>-', 'CO292');
 
 -- --------------------------------------------------------
@@ -299,7 +296,7 @@ INSERT INTO `t004` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('wednesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO494'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
-('friday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -327,7 +324,7 @@ INSERT INTO `t005` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO393'),
 ('wednesday', 'CO431<br>ML04', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', 'CO431<br>ML04', '-<br>-', 'CO393'),
-('friday', '-<br>-', 'CO431<br>ML04', '-<br>-', '-<br>-', '-<br>-', 'CO394'),
+('Sunday', '-<br>-', 'CO431<br>ML04', '-<br>-', '-<br>-', '-<br>-', 'CO394'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -355,7 +352,7 @@ INSERT INTO `t006` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', 'CO203<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO293'),
 ('wednesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', 'CO203<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO293'),
-('friday', '-<br>-', '-<br>-', 'CO203<br>NL32', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', 'CO203<br>NL32', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', 'CO203<br>NL32', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -383,7 +380,7 @@ INSERT INTO `t007` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO493'),
 ('wednesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO493'),
-('friday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO394'),
+('Sunday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO394'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -411,7 +408,7 @@ INSERT INTO `t008` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO293'),
 ('wednesday', '-<br>-', 'CO308<br>ML10', '-<br>-', '-<br>-', '-<br>-', 'CO494'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO293'),
-('friday', 'CO308<br>ML10', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', 'CO308<br>ML10', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', 'CO308<br>ML10', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -439,7 +436,7 @@ INSERT INTO `t009` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO293'),
 ('wednesday', '-<br>-', 'CO460<br>ML04', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO460<br>ML04', 'CO293'),
-('friday', '-<br>-', '-<br>-', 'CO460<br>ML04', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', 'CO460<br>ML04', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -467,7 +464,7 @@ INSERT INTO `t010` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', 'CO448<br>ML04', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('wednesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO448<br>ML04', '-'),
 ('thursday', '-<br>-', '-<br>-', 'CO448<br>ML04', '-<br>-', '-<br>-', '-'),
-('friday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', 'CO448<br>ML04', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -495,7 +492,7 @@ INSERT INTO `t011` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO493'),
 ('wednesday', 'CO309<br>ML10', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', '-<br>-', '-<br>-', 'CO309<br>ML10', '-<br>-', '-<br>-', 'CO493'),
-('friday', '-<br>-', '-<br>-', 'CO309<br>ML10', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', 'CO309<br>ML10', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -523,7 +520,7 @@ INSERT INTO `t012` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', 'CO445<br>ML04', '-<br>-', '-'),
 ('wednesday', '-<br>-', '-<br>-', 'CO445<br>ML04', '-<br>-', '-<br>-', 'CO292'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
-('friday', 'CO445<br>ML04', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', 'CO445<br>ML04', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO292');
 
 -- --------------------------------------------------------
@@ -551,7 +548,7 @@ INSERT INTO `t013` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', 'CO310<br>ML10', '-<br>-', '-<br>-', '-<br>-', 'CO393'),
 ('wednesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO292'),
 ('thursday', '-<br>-', 'CO310<br>ML10', '-<br>-', '-<br>-', '-<br>-', 'CO393'),
-('friday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', 'CO310<br>ML10', '-<br>-', '-<br>-', '-<br>-', '-<br>-', 'CO292');
 
 -- --------------------------------------------------------
@@ -579,7 +576,7 @@ INSERT INTO `t014` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', 'EL340<br>ML10', '-<br>-', 'EL211<br>NL32', '-<br>-', '-<br>-', '-'),
 ('wednesday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', 'EL340<br>ML10', 'EL211<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-'),
-('friday', '-<br>-', '-<br>-', '-<br>-', 'EL340<br>ML10', '-<br>-', '-'),
+('Sunday', '-<br>-', '-<br>-', '-<br>-', 'EL340<br>ML10', '-<br>-', '-'),
 ('saturday', 'EL211<br>NL32', 'EL340<br>ML10', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -607,7 +604,7 @@ INSERT INTO `t015` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', 'ME340<br>ML10', '-<br>-', '-<br>-', '-'),
 ('wednesday', '-<br>-', '-<br>-', 'ME340<br>ML10', '-<br>-', '-<br>-', '-'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
-('friday', '-<br>-', 'ME340<br>ML10', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', 'ME340<br>ML10', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -635,7 +632,7 @@ INSERT INTO `t016` (`day`, `period1`, `period2`, `period3`, `period4`, `period5`
 ('tuesday', '-<br>-', '-<br>-', '-<br>-', 'AM261<br>NL32', '-<br>-', '-'),
 ('wednesday', '-<br>-', 'AM261<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('thursday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-'),
-('friday', '-<br>-', 'AM261<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-'),
+('Sunday', '-<br>-', 'AM261<br>NL32', '-<br>-', '-<br>-', '-<br>-', '-'),
 ('saturday', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-<br>-', '-');
 
 -- --------------------------------------------------------
@@ -658,22 +655,22 @@ CREATE TABLE `teachers` (
 --
 
 INSERT INTO `teachers` (`faculty_number`, `name`, `alias`, `designation`, `contact_number`, `emailid`) VALUES
-('T016', 'Prof. Shamshad Husain', 'SH', 'Professor', '12345678', 'shamshadhusain@gmail.com'),
-('T015', 'Dr. Faisal Talib', 'FT', 'Associate Professor', '12345678', 'faisaltalib@gmail.com'),
-('T014', 'Dr. Mohd. Sharique', 'MS', 'Assistant Professor', '12345678', 'mohdsharique@gmail.com'),
-('T013', 'Mr. Faisal Alam', 'FA', 'Assistant Professor', '12345678', 'faisalalam@gmail.com'),
-('T011', 'Mr. Asad Mohammed Khan', 'AMK', 'Assistant Professor', '12345678', 'asadmohammedkhan@gmail.com'),
-('T012', 'Mr. Muneeb Hasan Khan', 'MHK', 'Assistant Professor', '12345678', 'muneebhasankhan@gmail.com'),
-('T007', 'Mr. Misbahur Rahman Warsi', 'MRW', 'Associate Professor', '12345678', 'mrwarsi@gmail.com'),
-('T008', 'Mr. Izharauddin', 'IZ', 'Associate Professor', '12345678', 'izharuddin@gmail.com'),
-('T009', 'Mr. Tameem Ahmad', 'TA', 'Assistant Professor', '12345678', 'tameemahmad@gmail.com'),
-('T010', 'Mr. Nadeem Akhtar', 'NA', 'Assistant Professor', '12345678', 'nadeemakhtar@gmail.com'),
-('T006', 'Dr. Saiful Islam', 'SI', 'Associate Professor', '12345678', 'saifulislam@gmail.com'),
-('T005', 'Dr. Rashid Ali', 'RA', 'Associate Professor', '12345678', 'rashidali@gmail.com'),
-('T004', 'Prof. M.M. Sufyan Beg', 'SB', 'Professor', '12345678', 'mmsufyanbeg@gmail.com'),
-('T002', 'Prof. Nesar Ahmad', 'NA', 'Professor', '12345678', 'nesarahmad@gmail.com'),
-('T003', 'Prof. Ash Mohammad Abbas', 'AMA', 'Professor', '12345678', 'ashmabbas@gmail.com'),
-('T001', 'Prof. Mohammad Sarosh Umar', 'MSU', 'Professor', '12345678', 'saroshumar@gmail.com');
+('T001', 'MRS. TAOFICA AMRINE', 'MTA', 'Chairman', '12345678', 'taofica@gmail.com'),
+('T002', 'Mr. Nadeem Akhtar', 'NA', 'Assistant Professor', '12345678', 'nadeemakhtar@gmail.com'),
+('T003', 'SOWMITRA DAS', 'SD', 'Assistant Professor', '12345678', 'sowmitra@gmail.com'),
+('T004', 'UMMA SAIMA RAHMAN', 'USR', 'Lecturer', '12345678', 'saima@gmail.com'),
+('T005', 'MANOARA BEGUM', 'MB', 'Sr. Lecturer', '12345678', 'manoara@gmail.com'),
+('T006', 'MS. TAHMINA AKTHER', 'MTA', 'Lecturer', '12345678', 'tahmina@gmail.com'),
+('T007', 'MOHAMMED MORSHED RANA', 'MMR', 'Lecturer', '12345678', 'nmorshed@gmail.com'),
+('T008', 'Mr. Tameem Ahmad', 'TA', 'Assistant Professor', '12345678', 'tameemahmad@gmail.com'),
+('T009', 'Mr. Izharauddin', 'IZ', 'Associate Professor', '12345678', 'izharuddin@gmail.com'),
+('T010', 'EMAM HOSSAIN', 'MRW', 'Associate Professor', '12345678', 'emam@gmail.com'),
+('T011', 'Saiful Islam', 'SI', 'Associate Professor', '12345678', 'saifulislam@gmail.com'),
+('T012', 'Rashid Ali', 'RA', 'Associate Professor', '12345678', 'rashidali@gmail.com'),
+('T013', 'M.M. Sufyan Beg', 'SB', 'Professor', '12345678', 'mmsufyanbeg@gmail.com'),
+('T014', 'Ash Mohammad Abbas', 'AMA', 'Professor', '12345678', 'ashmabbas@gmail.com'),
+('T015', 'Nesar Ahmad', 'NA', 'Professor', '12345678', 'nesarahmad@gmail.com'),
+('T016', 'Mohammad Sarosh Umar', 'MSU', 'Professor', '12345678', 'saroshumar@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -701,7 +698,7 @@ ALTER TABLE `semester5`
 -- Indexes for table `semester7`
 --
 ALTER TABLE `semester7`
-  ADD PRIMARY KEY (`day`);
+  ADD PRIMARY KEY (`day`);    
 
 --
 -- Indexes for table `subjects`

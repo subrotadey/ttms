@@ -62,12 +62,12 @@
         <tr>
             <td style="text-align:center">WEEKDAYS</td>
             <td style="text-align:center">8:00-8:50</td>
-            <td style="text-align:center">8:55-9:45</td>
-            <td style="text-align:center">9:50-10:40</td>
-            <td style="text-align:center">10:45-11:35</td>
-            <td style="text-align:center">11:40-12:30</td>
-            <td style="text-align:center">12:30-1:30</td>
-            <td style="text-align:center">1:30-4:00</td>
+            <td style="text-align:center">9:00-10:25</td>
+            <td style="text-align:center">10:30-12:00</td>
+            <td style="text-align:center">12:00-01:25</td>
+            <td style="text-align:center">01:25-02:00</td>
+            <td style="text-align:center">02:00-3:25</td>
+            <td style="text-align:center">3:30-5:00</td>
         </tr>
         <tr>
             <?php
@@ -132,7 +132,7 @@
                 </tr>\n";
                 }
                 echo '</table>';
-                $sign = "GENERATED VIA TIMETABLE MANAGEMENT SYSTEM, COMPUTER ENGINEERING DEPARTMENT, AMU.";
+                $sign = "GENERATED VIA TIMETABLE MANAGEMENT SYSTEM, COMPUTER ENGINEERING DEPARTMENT, PCIU.";
                 if (isset($_POST['select_semester'])) {
                     echo "<div align=\"center\">" . "<br>" . $str . "<br>
                             <strong>" . $sign . "<br></strong></div>";
@@ -153,8 +153,8 @@
         });
     }
 </script>
-<div align="center" style="margin-top: 10px">
+<!-- <div align="center" style="margin-top: 10px">
     <button id="saveaspdf" class="btn btn-info btn-lg" onclick="gendf()">SAVE AS PDF</button>
-</div>
+</div> -->
 </body>
 </html>
