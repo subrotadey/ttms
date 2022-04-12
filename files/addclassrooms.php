@@ -58,7 +58,7 @@
         </div>
     </div>
 </div>
-<!--NAVBAR SECTION END-->
+<!--NAVBAR  SECTION END-->
 <br>
 
 <div align="center"
